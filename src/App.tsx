@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import CardContainer from "./components/Card/CardContainer";
+import TileContainer from "./components/Tiles/TileContainer";
+import MetricContainer from "./components/PerformanceMetrics/MetricContainer";
+import Navbar from "./components/Common/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <CardContainer title="Welcome, John Matheww!" />
+      <MetricContainer title="Instant Dive into Your Performance Metrics" />
+      <TileContainer title="Discover the Heart of Our Functionality" />
+    </>
   );
 }
 
